@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="top">
+      <header class="container">
+        <nav class="nav collapsible">
+          <img class="nav__logo" src="Assets/Logo.svg" alt="" />
+          <img class="nav__menu" src="Assets/Hamburger Menu.svg" alt="" />
+          <ul class="list nav__list collapsible__content">
+            <li>Pricing</li>
+            <li>Support</li>
+            <li>
+              <button class="btn btn--block">
+                <a style="text-decoration: none; color: white;" href="signup.html"><span class="bold-text-button">Get Started</span> - it's free</a>
+              </button>
+              <hr />
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="hero block">
+        <div class="container grid grid--1x2">
+          <div class="hero__content">
+            <h1>
+              Your <span class="decorated__text">weekly</span> personal feed
+              digest.
+            </h1>
+            <p>
+              With IndieBrew, get personal feeds from resources all around the
+              web, including Reddit, HackerNews, IndiaNews, IndieHackers, and
+              much more.
+            </p>
+            <button class="btn">
+              <a style="text-decoration: none; color: white;" href="signup.html"><span class="bold-text-button">Get Started</span> - it's free</a>
+            </button>
+            <img class="user_avatar" src="Assets/User Avatars.svg" alt="" />
+            <p class="hero__tagline">
+              Join
+              <span style="color: #664efc; font-weight: bold">32,642</span>
+              IndieBrews in curating their personal digest.
+            </p>
+          </div>
+          <img class="hero__image" src="Assets/Feed Mockup.png" alt="" />
+        </div>
+      </section>
+    </section>
+
+    <section class="features block container">
+      <div class="grid grid--1x2">
+        <img class="feature__img" src="Assets/Social Media Icons.png" alt="" />
+        <div class="feature__body">
+          <h2>Curate your feed from dozen of resources.</h2>
+          <p class="feature__text">
+            we cover all major platforms where one could want to curate their
+            feed from Reddit, ProductHunt, IndieHackers, and so much more.
+          </p>
+          <a class="link link-arrow" href="#">See full list of resources</a>
+        </div>
+      </div>
+
+      <div class="grid grid--1x2">
+        <img
+          class="feature__img feature__img-2"
+          src="Assets/Phone Mockup.png"
+          alt=""
+        />
+        <div>
+          <h2>Access your feed from the comfort of your phone.</h2>
+          <p class="feature__text">
+            With native apps for both iOS and Android, accessing your curated
+            content has never been easier.
+          </p>
+          <a class="link link-arrow" href="#">Sign up for the waitlist</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="block footer">
+      <div class="container">
+        <div class="footer__heading">
+          <h3 class="footer__heading__text">IndieBrew</h3>
+          <p>
+            With IndieBrew, get personal feeds from resources all around the
+            web, including Reddit, HackerNews, and much more.
+          </p>
+          <p>Made with 🖤 by <span class="decorated__text">Ankit</span></p>
+        </div>
+        <div class="grid grid--2x2">
+          <ul class="list">
+            <li class="list__heading">Sitemap</li>
+            <li>Homepage</li>
+            <li>Pricing</li>
+          </ul>
+          <ul class="list">
+            <li class="list__heading">Resources</li>
+            <li>Support</li>
+            <li>Contact</li>
+            <li>FAQ</li>
+          </ul>
+          <ul class="list">
+            <li class="list__heading">Company</li>
+            <li>About</li>
+            <li>Customer</li>
+            <li>Blog</li>
+          </ul>
+          <ul class="list">
+            <li class="list__heading">Portfolios</li>
+            <li>HackerNews</li>
+            <li>Reddit</li>
+            <li>Twitter</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

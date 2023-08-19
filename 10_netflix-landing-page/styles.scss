@@ -1,0 +1,407 @@
+
+@font-face {
+    font-family: 'netflix_sansregular';
+    src: url('assets/fonts/netflixsans-regular-webfont.woff2') format('woff2'),
+         url('assets/fonts/netflixsans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'netflix_sansmedium';
+    src: url('assets/fonts/netflixsans-medium-webfont.woff2') format('woff2'),
+         url('assets/fonts/netflixsans-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'netflix_sanslight';
+    src: url('assets/fonts/netflixsans-light-webfont.woff2') format('woff2'),
+         url('assets/fonts/netflixsans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'netflix_sans_bold';
+    src: url('assets/fonts/netflixsans-bold-webfont.woff2') format('woff2'),
+         url('assets/fonts/netflixsans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+$body-color: #fff;
+$primary-color: #e50914;
+
+html {
+    font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+// Typography
+body {
+    font-family: 'netflix_sansregular', sans-serif;
+    font-size: 1.8rem;
+}
+
+h1, h2 {
+    font-family: 'netflix_sans_bold';
+    font-size: 3.2rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    h1,h2 {
+        font-size: 4.8rem;
+    }
+
+    
+    body {
+        font-size: 2.4rem;
+    }
+}
+
+// buttons
+
+.btn {
+    font-size: 1.8rem;
+    padding: 0.8rem 1.6rem;
+    font-weight: 600;
+    border-radius: 4px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background-color: $primary-color;
+    color: white;
+    text-align: center;
+
+    &.btn--arrow::after {
+        content: url(assets/right-arrow.png);
+        vertical-align: middle;
+        margin-left: 1rem;
+        filter: invert(1);
+        position: relative;
+        top: 2px;
+    }
+
+    &:hover{
+        background-color: darken($primary-color, 10%);
+        transition: background-color 0.1s;
+    }
+    @media screen and (min-width: 768px) {
+        &{
+            font-size: 2.4rem;
+            padding: 1.2rem 2.4rem;
+        }
+    }
+
+}
+
+// input 
+
+.input {
+    padding: 1rem;
+    width: 100%;
+    border-radius: 4px;
+    outline: 0;
+    border: 1px solid grey;
+    color: white; 
+
+    &::placeholder {
+        font-size: 1.6rem;
+    }
+}
+
+// collapsibles
+
+.collapsible {
+    .collapsible__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        vertical-align: middle;
+        
+    }
+
+    .collapsible__content{
+        display: none;
+    }
+
+    img {
+        width: 2rem;
+        height: 2rem;
+        transition: all 0.3s;
+    }
+
+    @media screen and (min-width: 768px) {
+        img {
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+}
+
+.collapsible--expanded {
+    .collapsible__content{
+        display: block;
+    }
+    
+    img {
+        transform: rotate(45deg);
+    }
+}
+
+
+// collapsible menu
+.collapsible {
+    margin-bottom: 0.8rem;
+    .collapsible__header,.collapsible__content{
+        background: #2d2d2d;
+        color: white;
+        padding: 1.2rem 2rem;
+    }
+
+    .collapsible__header:hover{
+        background: #4e4e4e;
+        transition: background 0.5s linear;
+        cursor: pointer;
+    }
+    
+    .collapsible__content{
+        margin-top: 0.7px;
+    }
+
+    img {
+        filter: invert(1);
+    }
+
+    @media screen and (min-width: 768px) {
+        .collapsible__header{
+            padding: 0.4rem 2.4rem;
+        }
+    }
+}
+
+
+// dropdown 
+.dropdown{
+    background: #000000;
+    color: white;
+    border-radius: 4px;
+    padding: 0.7rem 1rem;
+    padding-top: 2px;
+    font-size: 1.6rem;
+    option{
+        font-size: 1.6rem;
+    }
+}
+
+// nav
+
+.nav {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .nav__img {
+        content: url(assets/Netflix_Logo_PMS.png);
+        width: 13rem;
+    }
+    &.block{
+        padding-top: 1rem;
+    }
+
+    .nav__content{
+        display: flex;
+        align-items: center;
+
+        form, .btn {
+            margin-right: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .btn {
+            padding: 1rem 1.8rem;
+            white-space: nowrap;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .nav__img{
+            width: 20rem;
+        }
+    }
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.block {
+     --padding-vertical: 6rem;
+     padding: var(--padding-vertical) 2rem;
+}
+
+.block--dark {
+    background: #000000;
+    color: white;
+}
+
+.grid {
+    display: grid;
+
+    &.grid--1x2{
+        @media screen and (min-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2rem;
+        }
+    }
+}
+
+// hero
+
+.hero {
+    background: url(assets/IN-en-20230710-popsignuptwoweeks-perspective_alpha_website_large.jpg) no-repeat center center/cover;
+    color: white;
+    text-align: center;
+
+    .overlay {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+    
+
+        .overlay-2{
+            background: rgb(0 0 0 / 40%);
+        }
+    }
+
+    .hero__content{
+        @media screen and (min-width:768px){
+            padding-top: 8rem;
+            padding-bottom: 15rem;
+        }
+    }
+
+    .input {
+        margin-bottom: 2rem;
+        width: 80vw;
+        background: rgba(14, 14, 14, 0.5);
+    }
+
+    &{
+        @media screen and (min-width: 768px) {
+            .input{
+                width: 30%;
+            }
+
+            .btn {
+                padding-top: 0.9rem;
+                padding-bottom: 0.8rem;
+                padding-right: 1.4rem;
+                padding-left: 1.3rem;
+                margin-left: 0.4rem;
+            }
+        }
+    }
+}
+
+//feature 
+.feature {
+    border-top: 0.8rem solid #2b2a2a;
+    .grid{
+        .feature__text{
+            align-self: center;
+            text-align: center;
+        }
+
+        .feature__img{
+            width: 100%;
+        }
+
+        &{
+            @media screen and (min-width: 768px) {
+                .feature__text{
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+
+.inverted__grid {
+    .feature__img {
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+        & {
+            @media screen and (min-width: 768px) {
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+        }
+    }
+}
+
+//faq-section
+.faq {
+    border-top: 0.8rem solid #2b2a2a;
+    h2 {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .faq__callout{
+        margin-top: 6rem;
+        text-align: center;
+        p{
+            font-size: 2rem;
+        }
+    }
+
+    .btn{
+        padding-bottom: 0.9rem;
+        padding-top: 0.9rem;
+    }
+
+    .input{
+        background: rgba(14, 14, 14, 0.5);
+        margin-bottom: 1rem;
+        
+    }
+
+    & {
+        @media screen and (min-width: 768px) {
+            .input{
+                width: 30%;
+            }
+        }
+    }
+}
+
+//footer 
+.footer{
+    text-align: center;
+    color: white;
+    font-size: 1.7rem;
+    background-color: #2d2d2d;
+    .footer__text {
+        display: inline-block;
+        margin-bottom: 0.7rem;
+        margin-top: 0.7rem;
+    }
+}

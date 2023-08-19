@@ -1,0 +1,111 @@
+html {
+  font-size: 62.5%;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.3rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  color: hsl(0, 0%, 100%);
+  padding: 2rem;
+  border-radius: 6px;
+  width: 100%;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.card .card__header {
+  display: flex;
+  align-items: center;
+}
+.card .card__header img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+  border: 2px solid hsl(0, 0%, 100%);
+}
+.card .card__header .name {
+  font-size: 1.5rem;
+}
+.card .card__header .name::after {
+  content: "Verified Graduate";
+  display: block;
+  opacity: 0.6;
+  font-size: 1.1rem;
+}
+.card .body_title {
+  font-size: 1.75rem;
+  margin-top: -0.2rem;
+}
+.card .body {
+  opacity: 0.6;
+}
+
+.card--purple {
+  background-color: hsl(263, 55%, 52%);
+}
+@media screen and (min-width: 768px) {
+  .card--purple {
+    grid-column: 1/span 2;
+  }
+}
+
+.card--quotation {
+  background-image: url(assets/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 80% 0%;
+}
+
+.card--grey {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.card--white {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+}
+@media screen and (min-width: 768px) {
+  .card--white {
+    grid-column: 4;
+    grid-row: span 2;
+  }
+}
+
+.card--white-2 {
+  background: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+}
+
+.card--black {
+  background-color: hsl(219, 29%, 14%);
+}
+@media screen and (min-width: 768px) {
+  .card--black {
+    grid-column: 2/span 2;
+  }
+}
+.card--black .card__header img {
+  border-color: hsl(263, 55%, 52%);
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--2x4 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body style="background: #f7e9f9">
+
+
+    <header class="container">
+      <nav class="nav signup-nav">
+        <img class="nav__logo" src="Assets/Logo.svg" alt="" />
+        <div class="back">
+          <a href="index.html"
+            ><img class="back__button" src="Assets/Back Arrow.svg" alt=""
+          /></a>
+          <span>Back to homepage</span>
+        </div>
+      </nav>
+    </header>
+
+    <section class="block container signup">
+      <div class="grid grid--1x2">
+        <div class="signup__content">
+          <h2>Create your personalized feed.</h2>
+          <p class="icon-1">
+            <span  style="font-weight: bold; color: black;">Over 20 resources.</span> With resources ranging from Reddit to IndieHackers,
+            we've got all your needs covered.
+          </p>
+          <p class="icon-2">
+            <span style="font-weight: bold; color: black;">Delivered weekly.</span> Every week at exactly Tuesday 12:00 PM EST - expect
+            a value-packed digest right in your email.
+          </p>
+          <p class="icon-3">
+            <span  style="font-weight: bold; color: black;">Unlimited ideas.</span> With all the ideas you'll be reading about, what's stopping you from creating a sustainable startup?
+          </p>
+        </div>
+
+        <div class="form-card">
+          <form>
+            <h3>Create your IndieBrew Account</h3>
+            <label for="">Email</label>
+            <input class="input" placeholder="john@exammple.com" type="text" />
+            <label for="">Full name</label>
+            <input class="input" placeholder="John Doe" type="text" />
+            <label for="">Password</label>
+            <input class="input" placeholder="At least 8 characters" type="password" />
+            <div class="terms">
+              <input class="checkbox" type="checkbox" name="" id="" />
+              <span for="">By creating an account on IndieBrew, you agree to the <a class="link link--underline" href="#">Terms & Conditions</a></span>
+            </div>
+            <button class="btn btn--block">Create an Account</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>

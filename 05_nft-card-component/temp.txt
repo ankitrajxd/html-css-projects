@@ -1,0 +1,17 @@
+&::before{
+            content:url(assets/icon-view.svg);
+            position: absolute;
+            z-index: 99;
+            top: 45%;
+            left: 45%;
+            display: none;
+        }
+
+        &:hover {
+
+            background-color: #0198ad;
+            cursor: pointer;
+            &::before{
+                display: block;
+            }
+        }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="toggle_switch.css" />
+  </head>
+  <body>
+    <div class="step1">
+      <div class="steps">
+        <div class="step-group">
+          <span class="step">1</span>
+          <div class="step__details">
+            <p class="step__name">STEP 1</p>
+            <p class="step__description">YOUR INFO</p>
+          </div>
+        </div>
+        <div class="step-group">
+          <span class="step step__focused">2</span>
+          <div class="step__details">
+            <p class="step__name">STEP 2</p>
+            <p class="step__description">SELECT PLAN</p>
+          </div>
+        </div>
+        <div class="step-group">
+          <span class="step">3</span>
+          <div class="step__details">
+            <p class="step__name">STEP 3</p>
+            <p class="step__description">ADD-ONS</p>
+          </div>
+        </div>
+        <div class="step-group">
+          <span class="step">4</span>
+          <div class="step__details">
+            <p class="step__name">STEP 4</p>
+            <p class="step__description">SUMMARY</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-wrapper">
+        <div class="card">
+          <h2>Personal Info</h2>
+          <p>Please provide your name, email address, and phone number.</p>
+          <div class="plan-block grid grid--1x3">
+            <div class="plan">
+              <img src="assets/images/icon-arcade.svg" alt="" />
+              <div class="plan__details">
+                <p class="plan__name">Arcade</p>
+                <p class="plan__price">$9/mo</p>
+              </div>
+            </div>
+            <div class="plan">
+              <img src="assets/images/icon-advanced.svg" alt="" />
+              <div class="plan__details">
+                <p class="plan__name">Arcade</p>
+                <p class="plan__price">$9/mo</p>
+              </div>
+            </div>
+            <div class="plan">
+              <img src="assets/images/icon-pro.svg" alt="" />
+              <div class="plan__details">
+                <p class="plan__name">Arcade</p>
+                <p class="plan__price">$9/mo</p>
+              </div>
+            </div>
+          </div>
+          <div class="billing-cycle">
+            <span style="color: hsl(213, 96%, 18%)">Monthly</span>
+            <img src="/assets/images/toggle.png" alt="" />
+            <span style="color: #ccc">Yearly</span>
+          </div>
+        </div>
+        <div class="btn-wrapper">
+          <a href="step3.html"><button class="btn btn--primary">Next Step</button></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

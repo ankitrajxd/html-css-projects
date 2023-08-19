@@ -1,0 +1,134 @@
+// variables 
+$Moderate-violet: hsl(263, 55%, 52%);
+$Very-dark-grayish-blue: hsl(217, 19%, 35%);
+$Very-dark-blackish-blue: hsl(219, 29%, 14%);
+$White: hsl(0, 0%, 100%);
+$Light-gray: hsl(0, 0%, 81%);
+$Light-grayish-blue: hsl(210, 46%, 95%);
+
+
+
+html {
+    font-size: 62.5%;
+}
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+
+// typography
+body {
+    font-size: 1.3rem;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// cards
+
+.card {
+    
+    color: $White;
+    padding: 2rem;
+    border-radius: 6px;
+    width: 100%;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+    .card__header {
+
+        display: flex;
+        align-items: center;
+
+        img{
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            margin-right: 1rem;
+            border: 2px solid $White;
+        }
+
+        .name{
+            font-size: 1.5rem;
+        }
+
+        .name::after {
+            content: 'Verified Graduate';
+            display: block;
+            opacity: 0.6;
+            font-size: 1.1rem;
+        }
+    }
+
+    .body_title{
+        font-size: 1.75rem;
+        margin-top: -0.2rem;
+    }
+
+    .body {
+        opacity: 0.6;
+    }
+}
+
+.card--purple{
+    background-color: $Moderate-violet;
+
+    @media screen and (min-width: 768px) {
+        grid-column: 1 / span 2;
+    }
+}
+
+
+.card--quotation{
+    background-image: url(assets/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 80% 0%;
+}
+
+.card--grey{
+    background-color: $Very-dark-grayish-blue;
+}
+.card--white{
+    background-color: $White;
+    color: $Very-dark-grayish-blue;
+
+    @media screen and (min-width: 768px) {
+        grid-column: 4;
+        grid-row: span 2; 
+    }
+}
+
+.card--white-2{
+    background: $White;
+    color: $Very-dark-grayish-blue;
+}
+
+.card--black{
+    background-color: $Very-dark-blackish-blue;
+    @media screen and (min-width: 768px) {
+        
+        grid-column: 2 / span 2;
+    }
+
+    .card__header {
+        img{
+            border-color: $Moderate-violet;
+        }
+    }
+}
+
+// grid 
+.grid {
+    display: grid;
+    gap: 2rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .grid--2x4{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}

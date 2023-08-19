@@ -1,0 +1,135 @@
+html {
+    font-size: 62.5%;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container {
+    max-width: 80rem;
+    margin: 0 auto;
+    background: white;
+    border-radius: 1rem;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+
+    
+        
+}
+
+
+.comment_box {
+    display: flex;
+    margin-bottom: 3rem;
+
+
+
+    img {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        margin-right: 0.5rem;
+        position: relative;
+        top: -2rem;
+        left: -4rem;
+        border: 11px solid white;
+    }
+
+    .comment__content{
+        position: relative;
+        left: -3rem;
+        margin-bottom: 2rem;
+
+        .comment__header{
+            font-weight: 700;
+            margin-bottom: 1.4rem;
+
+            &::after {
+                font-weight: 400;
+                color: grey;
+                margin-left: 1.3rem;
+            }
+        }
+
+        .comment__body {
+            margin-bottom: 1.4rem;
+        }
+
+        .like__count{
+            font-weight: 800;
+            color: dodgerblue;
+            
+
+            &::before {
+                content: url(Assets/Up.svg);
+                margin-right: 0.7rem;
+            }
+
+            &::after {
+                content: url(Assets/Down.svg);
+                margin-left: 0.7rem;
+            }
+        }
+
+        span {
+            margin-right: 1.7rem;
+        }
+    }
+}
+
+.comment-1 {
+    .comment__header::after{
+        content: '20 hours ago';
+}
+}
+
+.comment-2 {
+    margin-left: 6rem;
+
+    .comment__header::after{
+            content: '16 hours ago';
+    }
+}
+.comment-3 {
+    margin-left: 11rem;
+    
+    .comment_box{
+        margin-bottom: 0;
+    }
+
+    .comment__header{
+        &::after {
+            content: '14 hours ago';
+        }
+    }
+}
+
+.comment-4 {
+    
+    .comment__header{
+        &::after {
+            content: '12 hours ago';
+        }
+    }
+}
+
+.comment {
+    border-left: 2px solid #ccc;
+    margin-left: 7rem;
+    
+}
