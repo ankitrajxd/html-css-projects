@@ -22,6 +22,12 @@ body {
 
 h1 {
   color: black;
+  font-size: 2.5rem;
+}
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: 3.5rem;
+  }
 }
 
 .btn {
@@ -312,5 +318,68 @@ h1 {
 @media screen and (min-width: 700px) {
   .sidebar, .overlay {
     display: none;
+  }
+}
+.cart-overview {
+  background: hsl(0, 0%, 100%);
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 8px;
+  opacity: 0;
+  transition: all 0.4s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+.cart-overview .cart-name {
+  font-weight: bold;
+  color: black;
+  margin-top: 0;
+  margin-bottom: 2.8rem;
+}
+.cart-overview hr {
+  opacity: 0.3;
+  height: 1px;
+  padding: 0;
+  border-bottom: 0;
+}
+.cart-overview .item {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.cart-overview .item .product__image {
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 5px;
+}
+.cart-overview .item .name-price-quantity p {
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+.cart-overview .item .name-price-quantity .total {
+  font-weight: bold;
+  color: black;
+  margin-left: 0.5rem;
+}
+.cart-overview .item .delete__icon {
+  width: 100%;
+}
+
+.show {
+  opacity: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  .cart-overview {
+    right: 3%;
+    left: 60%;
+    top: 10%;
+    max-width: 35rem;
   }
 }/*# sourceMappingURL=style.css.map */
