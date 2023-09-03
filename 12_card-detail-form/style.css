@@ -65,10 +65,11 @@ body {
 }
 
 .card-front {
+  max-width: 390px;
   background-image: url(images/bg-card-front.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 2rem;
+  padding: 3rem;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -80,7 +81,8 @@ body {
   justify-content: space-between;
   letter-spacing: 2px;
   margin-top: 4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
 }
 .card-front .card--details {
   color: white;
@@ -88,5 +90,4 @@ body {
   letter-spacing: 1.3px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1rem;
 }/*# sourceMappingURL=style.css.map */
