@@ -11,10 +11,20 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
   </head>
   <body>
-      <div class="card-front">
-          <img class="card--logo" src="images/card-logo.svg" alt="">
+    <section class="card-form">
+      <div class="cards">
+        <div class="card-back">
+          <img src="images/bg-card-back.png" alt="" />
+          <span class="cvv">000</span>
+        </div>
+
+        <div class="card-front">
+          <img class="card-image" src="images/bg-card-front.png" alt="" />
+          <div class="card-content">
+            <img class="card--logo" src="images/card-logo.svg" alt="" />
             <div class="card--numbers">
               <span class="first-four">0000</span>
               <span class="second-four">0000</span>
@@ -25,6 +35,37 @@
               <span class="name">JANE APPLESEED</span>
               <span>00/00</span>
             </div>
+          </div>
+        </div>
       </div>
+
+      <div class="form-wrapper">
+        <form class="form">
+          <label for="">CARDHOLDER NAME</label>
+          <input type="text" name="" id="" placeholder="e.g. Jane Appleseed" />
+          <label for="">CARD NUMBER</label>
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="e.g. 1234 5678 9123 0000"
+          />
+          <div class="wrapper">
+            <div class="date">
+              <label for="">EXP.DATE (MM/YY)</label>
+              <div class="date-inner">
+                <input type="text" placeholder="MM" />
+                <input type="text" name="" id="" placeholder="YY" />
+              </div>
+            </div>
+            <div class="cvv">
+              <label for="">CVC</label>
+              <input type="text" name="" id="" placeholder="e.g. 123" />
+            </div>
+          </div>
+          <button class="btn">Confirm</button>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
