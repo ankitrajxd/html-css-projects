@@ -1,0 +1,111 @@
+$Purple: hsl(259, 100%, 65%);
+$Light-red: hsl(0, 100%, 67%);
+
+$White: hsl(0, 0%, 100%);
+$Off-white: hsl(0, 0%, 94%);
+$Light-grey: hsl(0, 0%, 86%);
+$Smokey-grey: hsl(0, 1%, 44%);
+$Off-black: hsl(0, 0%, 8%);
+
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+
+// typography
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: $Off-white;
+}
+
+
+// input
+.input {
+    display: flex;
+    flex-direction: column;
+    input{
+        width: 100%;
+        padding: 1.4rem;
+        font-size: 2.8rem;
+        font-weight: bolder;
+        border-radius: 7px;
+        outline: none;
+        border: 1.4px solid $Light-grey;
+        box-shadow: rgba(50, 50, 93, 0.25) 3px 5px 20px 0px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+        &:focus{
+            border-color: $Purple;
+        }
+    }
+}
+
+label {
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    color: $Smokey-grey;
+    margin-bottom: 0.7rem;
+}
+
+.dob {
+    display: flex;
+    column-gap: 2.5rem;
+    max-width: 75%;
+}
+
+.purple-year,.purple-month,.purple-day {
+    color: $Purple;
+}
+
+.calculated{
+    font-size: 8rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-weight: 800;
+    p{
+        margin: 0;
+        font-style: italic;
+    }
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: $White;
+    padding: 5rem 5rem;
+    border-radius: 18px 18px 140px 18px;
+    position: relative;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+hr{
+    border: 2px solid $Light-grey;
+    border-top: none;
+    margin-top: 4rem;
+    opacity: 0.6;
+}
+
+.btn{
+    background: $Off-black;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    border-radius: 100%;
+    position: absolute;
+    right: 5%;
+    top: 23%;
+    cursor: pointer;
+
+    
+}

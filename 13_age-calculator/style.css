@@ -1,0 +1,96 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 94%);
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+.input input {
+  width: 100%;
+  padding: 1.4rem;
+  font-size: 2.8rem;
+  font-weight: bolder;
+  border-radius: 7px;
+  outline: none;
+  border: 1.4px solid hsl(0, 0%, 86%);
+  box-shadow: rgba(50, 50, 93, 0.25) 3px 5px 20px 0px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.input input:focus {
+  border-color: hsl(259, 100%, 65%);
+}
+
+label {
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  color: hsl(0, 1%, 44%);
+  margin-bottom: 0.7rem;
+}
+
+.dob {
+  display: flex;
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+  max-width: 75%;
+}
+
+.purple-year, .purple-month, .purple-day {
+  color: hsl(259, 100%, 65%);
+}
+
+.calculated {
+  font-size: 8rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-weight: 800;
+}
+.calculated p {
+  margin: 0;
+  font-style: italic;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: hsl(0, 0%, 100%);
+  padding: 5rem 5rem;
+  border-radius: 18px 18px 140px 18px;
+  position: relative;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+hr {
+  border: 2px solid hsl(0, 0%, 86%);
+  border-top: none;
+  margin-top: 4rem;
+  opacity: 0.6;
+}
+
+.btn {
+  background: hsl(0, 0%, 8%);
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 100%;
+  position: absolute;
+  right: 5%;
+  top: 23%;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
